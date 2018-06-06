@@ -1,25 +1,16 @@
-/*
+/* 
 
-1: Make Canvas the size of letter paper
-2: Load Image */
-
-     function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result)
-                        .width(150)
-                        .height(200);
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-/*
-
-3: 
-4:
+1: access camera
+2: take picture
+3: preview picture
+4: crop to circle 2.25" in diameter
+    a: able to move circle crop around on the image
+    
+5: place X number of cropped images on a canvas sized 8.5" X 5.5
+    a: create canvas 8.5" X 5.5"
+    b: send cropped images to specific XY coords on canvas
+    
+6: send canvas to printer as PDF
 
 */
+
